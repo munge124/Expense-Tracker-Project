@@ -51,7 +51,7 @@ function App() {
       <h1>Expense Tracker</h1>
       <ExpenseForm onAddExpense={addExpense} />
       <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-      <SortControls onSort={requestSort} /> {/* Added missing component */}
+      <SortControls onRequestSort={requestSort} /> 
       <ExpenseTable expenses={sortedExpenses} onDelete={deleteExpense} />
     </div>
   );
