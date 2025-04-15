@@ -11,7 +11,7 @@ function App() {
     { id: 2, description: 'Electricity', amount: 80, category: 'Utilities' }
   ]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' }); // Added missing state
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' }); 
 
   const filteredExpenses = expenses.filter(expense => 
     expense.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
